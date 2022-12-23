@@ -32,4 +32,13 @@
 
 TEST_CASE("True == True", "") { REQUIRE(true == true); }
 
+TEST_CASE("ya") {
+    CircularLinkedList<int> list;
+    list.InsertInOrder(1);
+    list.InsertInOrder(2);
+    CircularLinkedList<int> list2;
+    list2 = list;
+    list2.Reverse();
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////
